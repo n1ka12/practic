@@ -40,7 +40,27 @@ namespace WpfApp1
 
         private void AuthBtn_Click(object sender, RoutedEventArgs e)
         {
+            var login = LoginBox.Text;
 
+            var password = PassBox.Text;
+
+            var context = new AppDbContext();
+
+            var user = context.Users.SingleOrDefault(x=> x.Login ==  login && x.Password == password);
+            if (user is null)
+            {
+                MessageBox.Show("Неправильный логин или пароль!");
+                return;
+            }
+            MessageBox.Show("Вы успешно вошли в аккаунт!");
         }
     }
+}
+public class User
+{
+    public int Id { get; set; }
+
+    public string Login { get; set; }
+
+    public string Password { get; set; }
 }

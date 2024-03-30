@@ -24,8 +24,8 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <TextBox x:Name="a2"  Grid.Row="3" Grid.Column="1" Width="600" Height="50" />
-        <TextBox x:Name="a1_Copy1" Grid.Row="5" Grid.Column="1"/>
+        <TextBox x:Name="LoginBox"  Grid.Row="3" Grid.Column="1" Width="600" Height="50" />
+        <TextBox x:Name="PassBox" Grid.Row="5" Grid.Column="1"/>
         <Button x:Name="AuthBtn" Content="Войти" Grid.Column="1" Grid.Row="7" FontSize="25" Width="200" Background="LightSeaGreen" Click="AuthBtn_Click"/>
         <Button Name="reg" Content="Не зарегистрированы?Зарегистрироваться" Grid.Row="6" Grid.Column="1" FontSize="19" Background="MediumPurple" Click="Button_Click_3"/>
         <TextBlock Text="Авторизация" FontSize="45" Grid.Row="1" Grid.Column="1" TextAlignment="Center"></TextBlock>

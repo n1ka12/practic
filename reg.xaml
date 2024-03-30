@@ -24,12 +24,21 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <TextBox x:Name="a2"  Grid.Row="3" Grid.Column="1" Width="600" Height="35" />
+        <TextBox x:Name="LoginBox"  Grid.Row="3" Grid.Column="1" Width="600" Height="35"  />
         <TextBox x:Name="a3"  Grid.Row="4" Grid.Column="1" Width="600" Height="35" />
         <TextBox x:Name="a4"  Grid.Row="6" Grid.Column="1" Width="600" Height="35" />
 
-        <TextBox x:Name="a1_Copy1" Grid.Row="5" Grid.Column="1" Width="600" Height="35"/>
-        <Button x:Name="RegBtn" Content="Зарегистрироваться" Grid.Column="1" Grid.Row="8" FontSize="25" Width="250" Background="LightSeaGreen" />
+        <TextBox x:Name="PassBox" Grid.Row="5" Grid.Column="1" Width="600" Height="35"/>
+        <Button x:Name="RegBtn" Content="Назад" Grid.Column="2" Grid.Row="9"  FontSize="25" Background="LightSeaGreen"  Click="RegBtn_Click" >
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="0.63"/>
+                    <RotateTransform Angle="-0.711"/>
+                    <TranslateTransform Y="1.375"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
 
         <TextBlock Text="Регистрация" FontSize="45" Grid.Row="1" Grid.Column="1" TextAlignment="Center"></TextBlock>
         <Image Margin="197,164,558,230" Source="/Img/free-icon-avatar-6387915.png" Stretch="Fill"/>
@@ -50,6 +59,17 @@
         <Image Margin="358,5,0,2" Source="/Img/free-icon-open-eye-829117.png" Stretch="Fill" Grid.Row="6" RenderTransformOrigin="-0.27,0.517" Grid.Column="1"/>
         <Image Source="/Img/free-icon-padlock-494950.png" Stretch="Fill" Grid.Row="5"  Width="45" Height="45" HorizontalAlignment="Left" Margin="155,43,0,42" Grid.RowSpan="3"/>
         <Image Margin="148,0,5,1" Source="/Img/free-icon-email-2549872.png" Stretch="Fill" Grid.Row="4"/>
+        <Button x:Name="RegBtn_Копировать" Content="Зарегистрироваться" Grid.Column="1" FontSize="25" Background="LightSeaGreen" Margin="62,41,72,1" RenderTransformOrigin="0.5,0.5" Grid.RowSpan="2" Grid.Row="7" Click="RegBtn_Копировать_Click" >
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="0.63"/>
+                    <RotateTransform Angle="-0.711"/>
+                    <TranslateTransform Y="1.375"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+
 
     </Grid>
 </Window>
