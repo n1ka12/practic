@@ -45,8 +45,22 @@ namespace WpfApp1
             var context = new AppDbContext();
 
             var user_exists = context.Users.FirstOrDefault(x=> x.Login == login);
-            if (user_exists is not null)
+
+            if (login.Length == 0)
             {
+                MessageBox.Show("Введите логин");
+                return;
+            }
+
+            if (pass.Length == 0)
+            {
+                MessageBox.Show("Введите пароль");
+                return;
+            }
+
+            if(user_exists is not null)
+
+            { 
                 MessageBox.Show("Такой пользователь уже зарегистрирован");
                 return;
             }
