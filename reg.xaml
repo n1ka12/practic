@@ -40,7 +40,7 @@
             </Button.RenderTransform>
         </Button>
 
-        <TextBlock Text="Регистрация" FontSize="45" Grid.Row="1" Grid.Column="1" TextAlignment="Center"></TextBlock>
+        <TextBlock Text="Регистрация" FontSize="35" TextAlignment="Center" Grid.ColumnSpan="2" Margin="190,35,10,8" Grid.RowSpan="2"/>
         <Image Margin="197,164,558,230" Source="/Img/free-icon-avatar-6387915.png" Stretch="Fill"/>
         <Image Margin="190,244,553,150" Source="/Img/free-icon-padlock-494950.png" Stretch="Fill"/>
         <Image Margin="557,243,178,146" Source="/free-icon-open-eye-829117.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">

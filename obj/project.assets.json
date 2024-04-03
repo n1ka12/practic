@@ -2891,11 +2891,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\student\\Desktop\\practic\\WpfApp1.csproj",
+      "projectUniqueName": "C:\\Users\\student\\Desktop\\practica Bystryakov\\WpfApp1.csproj",
       "projectName": "WpfApp1",
-      "projectPath": "C:\\Users\\student\\Desktop\\practic\\WpfApp1.csproj",
+      "projectPath": "C:\\Users\\student\\Desktop\\practica Bystryakov\\WpfApp1.csproj",
       "packagesPath": "C:\\Users\\student\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\student\\Desktop\\practic\\obj\\",
+      "outputPath": "C:\\Users\\student\\Desktop\\practica Bystryakov\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

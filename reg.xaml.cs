@@ -67,7 +67,12 @@ namespace WpfApp1
             var user = new User { Login = login, Password = pass };
             context.Users.Add(user);
             context.SaveChanges();
-            MessageBox.Show("Вы успешно зарегестрировались");
+            MessageBox.Show("Вы успешно зарегестрировались");                                 
         }
-    }
-}
+    }     
+}          
+           
+
+          
+
+  
